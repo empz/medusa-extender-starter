@@ -14,12 +14,9 @@
     "rootDir": "src",
     "esModuleInterop": true
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "dist",
-    "node_modules",
-    "**/*.spec.ts"
-  ]
+  "include": ["src"],
+  "exclude": ["dist", "node_modules", "**/*.spec.ts"],
+  "ts-node": {
+    "files": true
+  }
 }

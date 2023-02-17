@@ -8,9 +8,7 @@ import { UserModule } from "./modules/user/user.module";
 async function bootstrap() {
   const expressInstance = express();
 
-  await new Medusa(resolve(__dirname, ".."), expressInstance).load([
-    UserModule,
-  ]);
+  await new Medusa(resolve(__dirname, ".."), expressInstance).load([]);
 
   expressInstance.listen(config.serverConfig.port, () => {
     console.info(
