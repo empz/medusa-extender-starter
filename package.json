@@ -22,7 +22,7 @@
     "test": "NODE_ENV=test jest --detectOpenHandles",
     "test:watch": "NODE_ENV=test jest --watch --detectOpenHandles",
     "test:cov": "NODE_ENV=test jest --coverage --detectOpenHandles",
-    "db:migrate": "npx medusa migrations run && medex migrate --run"
+    "db:migrate": "medusa migrations run && medex migrate --run"
   },
   "dependencies": {
     "@medusajs/medusa": "^1.7.2",
