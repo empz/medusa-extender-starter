@@ -18,8 +18,8 @@ dotenv.config({ path: process.cwd() + "/" + ENV_FILE_NAME });
 const DATABASE_URL = process.env.DATABASE_URL;
 const REDIS_URL = process.env.REDIS_URL || "";
 const PORT = process.env.PORT || 3000;
-const ADMIN_CORS = process.env.ADMIN_CORS || "";
-const STORE_CORS = process.env.STORE_CORS || "";
+const ADMIN_CORS = process.env.ADMIN_CORS || "http://localhost:7000";
+const STORE_CORS = process.env.STORE_CORS || "http://localhost:3000";
 
 const plugins = [`medusa-fulfillment-manual`, `medusa-payment-manual`];
 
@@ -33,7 +33,7 @@ module.exports = {
 
     database_type: "postgres",
     database_url: DATABASE_URL,
-    // redis_url: REDIS_URL,
+    redis_url: REDIS_URL,
 
     store_cors: STORE_CORS,
     admin_cors: ADMIN_CORS,
