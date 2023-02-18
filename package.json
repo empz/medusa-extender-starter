@@ -41,6 +41,7 @@
     "medusa-interfaces": "1.x",
     "medusa-payment-manual": "^1.0.12",
     "medusa-payment-stripe": "^1.1.34",
+    "medusa-plugin-auth": "^1.4.2",
     "mongoose": "^6.1.1",
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.4",
